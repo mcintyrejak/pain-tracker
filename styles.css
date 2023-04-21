@@ -1,0 +1,57 @@
+:root {
+  --color-light: rgb(113, 113, 143);
+  --color-dark: rgb(48, 49, 89);
+  --color-darkest: rgb(20, 22, 38);
+}
+
+html,
+body,
+container-all {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
+}
+
+.container-all {
+  display: flex;
+  flex: 2;
+  gap: 2rem;
+  margin: 3rem; /* important */
+  padding: 1.7rem 1.5rem;
+  min-width: 600px;
+  background-color: var(--color-darkest);
+  border-radius: 2.5rem;
+}
+
+.container-nav {
+  width: 8rem;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  list-style-type: none;
+}
+
+.container-dash {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.container-left {
+  width: 60%;
+}
+
+.container-right {
+  width: 40%;
+}
