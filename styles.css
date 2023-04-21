@@ -1,7 +1,11 @@
 :root {
-  --color-light: rgb(113, 113, 143);
-  --color-dark: rgb(48, 49, 89);
-  --color-darkest: rgb(20, 22, 38);
+  --color-lighter: rgb(223, 220, 217);
+  --color-light: rgb(206, 194, 172);
+  --color-dark: rgb(55, 53, 35);
+  --color-darkest: rgb(37, 35, 20);
+  --color-highlight: rgb(210, 160, 83);
+  --color-offset-1: rgb(117, 153, 187);
+  --color-offset-2: rgb(163, 88, 60);
 }
 
 html,
@@ -9,13 +13,13 @@ body,
 container-all {
   height: 100%;
   margin: 0;
-  color: white;
 }
 
 body {
   display: flex;
   flex-direction: column;
   background-color: var(--color-light);
+  color: var(--color-lighter);
 }
 
 .container-all {
