@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400;500;600;800&family=Playfair+Display&display=swap");
+
 :root {
+  --color-lightest: rgb(243, 242, 239);
   --color-lighter: rgb(223, 220, 217);
-  --color-light: rgb(206, 194, 172);
+  --color-light: rgb(199, 197, 191);
+  --color-mid: rgb(206, 194, 172);
   --color-dark: rgb(55, 53, 35);
   --color-darkest: rgb(37, 35, 20);
   --color-highlight: rgb(210, 160, 83);
@@ -18,44 +22,91 @@ container-all {
 body {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-light);
-  color: var(--color-lighter);
+  background-color: var(--color-mid);
+  color: var(--color-light);
 }
 
 .container-all {
   display: flex;
   flex: 2;
   gap: 2rem;
-  margin: 3rem; /* important */
-  padding: 1.7rem 1.5rem;
+  margin: 4rem 3rem; /* important */
+  padding: 1.7rem 0.75rem;
   min-width: 600px;
   background-color: var(--color-darkest);
   border-radius: 2.5rem;
 }
 
 .container-nav {
-  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Libre Franklin";
+  font-size: 7pt;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.logo {
+  padding: 0 1.5rem;
 }
 
 .nav-list {
   margin: 0;
   padding: 0;
+  height: 60%;
 }
 
 .nav-link {
   list-style-type: none;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.nav-link:hover {
+  background-color: var(--color-highlight);
+  color: var(--color-lightest);
+  border-radius: 0.75rem;
 }
 
 .container-dash {
   display: flex;
   gap: 2rem;
-  width: 100%;
+  width: 80%;
+  font-family: "Libre Franklin";
+  font-size: 9pt;
 }
 
 .container-left {
-  width: 60%;
 }
 
-.container-right {
-  width: 40%;
+.welcome {
+  font-family: "Playfair Display";
+  font-size: 20pt;
 }
+
+.sub-welcome {
+  text-transform: uppercase;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.container-pain {
+  display: flex;
+  flex-direction: column;
+}
+
+.pain-number {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 1rem 0;
+  background-color: var(--color-offset-2);
+  font-family: "Playfair Display";
+  line-height: 110%;
+  text-align: center;
+  font-size: 20pt;
+}
+
+/* .container-right {
+  width: 40%;
+} */
